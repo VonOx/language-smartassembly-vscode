@@ -1,0 +1,28 @@
+{
+    "name": "language-smartassembly",
+    "displayName": "SmartAssembly Language Support",
+    "description": "Adds syntax highlighting and autocompletion for SmartAssembly (.tab) files.",
+    "version": "0.0.1",
+    "publisher": "Medze69",
+    "repository": "https://github.com/Medze69/language-smartassembly",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "icon": "smartassembly.png",
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "smartassembly",
+            "aliases": ["SmartAssembly", "smartassembly"],
+            "extensions": [".tab"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "smartassembly",
+            "scopeName": "source.smartassembly",
+            "path": "./syntaxes/smartassembly.tmLanguage.json"
+        }]
+    }
+}
